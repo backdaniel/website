@@ -1,6 +1,6 @@
 # Home
 
-Welcome to my personal website! It is designed to be simple, using Markdown. It's a space for keeping my random files, utility scripts, and interesting posts, but also some [very important information](https://www.youtube.com/watch?v=dQw4w9WgXcQ). This is the index page.
+Welcome to my personal website! It is designed to be simple, using Markdown. It's a space for keeping random files, utility scripts, and interesting posts, but also some [very important information](https://www.youtube.com/watch?v=dQw4w9WgXcQ). This is the index page.
 
 ## Content
 - [Home]()
