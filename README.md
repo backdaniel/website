@@ -1,6 +1,6 @@
 # Home
 
-Welcome to my personal website! It is designed to be simple, using Markdown. It's a space for my notes and thoughts, but also my portfolio and some utility scripts. This is the index page.
+Welcome to my personal website! It is designed to be simple, using Markdown. It's a space for my notes and thoughts, but also some utility scripts and some [very important information](https://www.youtube.com/watch?v=dQw4w9WgXcQ). This is the index page.
 
 ## Content
 - [Home]()
@@ -8,10 +8,9 @@ Welcome to my personal website! It is designed to be simple, using Markdown. It'
 - [Notes](notes/)
 - [Blog](blog/)
 
-## Projects
+## Pages
 - Item
-
-## Other
+- Item
 - Item
 
 ---
