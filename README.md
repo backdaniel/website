@@ -23,7 +23,3 @@ Welcome to my personal website! It is designed to be simple, using Markdown. It'
 - Item
 - Item
 - Item
-
----
-
-[View Source on GitHub](https://github.com/backdaniel/website) | [Powered by GitHub Pages](https://pages.github.com/)
