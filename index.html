@@ -63,6 +63,11 @@
             max-width: 800px;
             margin: auto;
             padding: 0 10px;
+            display: none;
+        }
+
+        .content.active {
+            display: block;
         }
         
         @media (max-width: 820px) {
@@ -85,10 +90,11 @@
         <li><a href="#about">About</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#other">Other</a></li>
     </ul>
 </nav>
 
-<div class="content" id="home">
+<div class="content active" id="home">
     <h2>Welcome to the Home Section</h2>
     <p>This is where you can put an introduction or welcome message.</p>
 </div>
@@ -103,10 +109,37 @@
     <p>Blog posts or news updates can be displayed here.</p>
 </div>
 
+<div class="content" id="contact">
+    <h2>Contact Information</h2>
+    <p>Placeholder.</p>
+</div>
+
 <div class="content" id="other">
     <h2>Other Information</h2>
     <p>Any additional information can be placed here.</p>
 </div>
 
+    <script>
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const contentSections = document.querySelectorAll('.content');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                contentSections.forEach(section => section.classList.remove('active'));
+
+                link.classList.add('active');
+
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>
