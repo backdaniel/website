@@ -76,11 +76,19 @@
         }
 
         table {
-            border-collapse: collapse;
+            border-spacing: 3px 12px;
+            border-collapse: separate;
+            border: 2px solid black;
         }
 
-        th, td {
-            padding: 3px;
+        th {
+            text-align: left;
+            background-color: #f5f5f5;
+            border: 2px solid black;
+        }
+
+        #ascii-control td:nth-child(1) {
+            background-color: #f0f8ff;
         }
         
         @media (max-width: 820px) {
@@ -130,7 +138,7 @@
 <div class="content" id="other">
     <h2>ASCII Table</h2>
     <h3>Control</h3>
-    <table border="1">
+    <table id="ascii-control">
         <thead>
             <tr>
                 <th>Dec</th>
@@ -138,8 +146,8 @@
                 <th>Oct</th>
                 <th>Binary</th>
                 <th>Char</th>
-                <th>Ctrl-char</th>
-                <th>Esc seq</th>
+                <th>Caret</th>
+                <th>Escape</th>
                 <th>Name</th>
             </tr>
         </thead>
@@ -181,7 +189,7 @@
     </table>
 
     <h3>Printable</h3>
-    <table border="1">
+    <table id="ascii-printable">
         <thead>
             <tr>
                 <th>Dec</th><th>Hex</th><th>Oct</th><th>Bin</th><th>Char</th>
@@ -381,27 +389,27 @@
     </table>
 </div>
 
-    <script>
-        const navLinks = document.querySelectorAll('nav ul li a');
-        const contentSections = document.querySelectorAll('.content');
+<script>
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const contentSections = document.querySelectorAll('.content');
 
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
 
-                navLinks.forEach(nav => nav.classList.remove('active'));
-                contentSections.forEach(section => section.classList.remove('active'));
+            navLinks.forEach(nav => nav.classList.remove('active'));
+            contentSections.forEach(section => section.classList.remove('active'));
 
-                link.classList.add('active');
+            link.classList.add('active');
 
-                const targetId = link.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    targetSection.classList.add('active');
-                }
-            });
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
         });
-    </script>
+    });
+</script>
     
 </body>
 </html>
