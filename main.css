@@ -1,0 +1,125 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	color: #333;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px 10px;
+}
+
+header h1 {
+	font-size: 24px;
+	max-width: 800px;
+	margin: auto;
+}
+
+nav {
+	background-color: #444;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap;
+	max-width: 800px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+nav ul li {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li a {
+	display: block;
+	padding: 14px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background-color: #555;
+}
+
+nav ul li a.active {
+	background-color: #222;
+}
+
+#main {
+	background-color: #f4f4f4;
+	padding: 30px 0 90px 0;
+}
+
+.content {
+	max-width: 800px;
+	margin: auto;
+	padding: 0 10px;
+	display: none;
+}
+
+.content.active {
+	display: block;
+}
+
+table {
+	border-spacing: 24px 0;
+	border-collapse: separate;
+	border: 1px solid black;
+}
+
+th {
+	padding: 9px 0px;
+	text-align: left;
+}
+
+td {
+	padding: 3px 0px;
+}
+
+#ascii-control td:nth-child(1) {
+	background-color: #f0f8ff;
+}
+
+#ascii-printable td:nth-child(1),
+#ascii-printable td:nth-child(6) {
+	background-color: #f0f8ff;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #1e90ff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 820px) {
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+}

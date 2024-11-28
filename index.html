@@ -1,418 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel's Webpage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Daniel's Webpage</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 10px;
-        }
-
-        header h1 {
-            font-size: 24px;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        nav {
-            background-color: #444;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style-type: none;
-            flex-wrap: wrap;
-            max-width: 800px;
-            margin: auto;
-            padding: 0 10px;
-        }
-
-        nav ul li {
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li a {
-            display: block;
-            padding: 14px 20px;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            background-color: #555;
-        }
-        
-        nav ul li a.active {
-            background-color: #222;
-        }
-
-        .content {
-            max-width: 800px;
-            margin: auto;
-            padding: 0 10px;
-            display: none;
-        }
-
-        .content.active {
-            display: block;
-        }
-
-        table {
-            border-spacing: 24px 0;
-            border-collapse: separate;
-            border: 1px solid black;
-        }
-
-        th {
-            padding: 9px 0px;
-            text-align: left;
-        }
-
-        td {
-            padding: 3px 0px;
-        }
-
-        #ascii-control td:nth-child(1) {
-            background-color: #f0f8ff;
-        }
-        
-        @media (max-width: 820px) {
-            nav ul {
-                padding: 0;
-                margin: 0;
-            }
-        }
-    </style>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 
 <header>
-    <h1>Daniel's Webpage</h1>
+	<h1>Daniel's Webpage</h1>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#other">Other</a></li>
-    </ul>
+	<ul>
+		<li><a href="#home" class="active">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#blog">Blog</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#other">Other</a></li>
+	</ul>
 </nav>
 
+<div id="main">
+
 <div class="content active" id="home">
-    <h2>Welcome to the Home Section</h2>
-    <p>This is where you can put an introduction or welcome message.</p>
+	<h2>Welcome to the Home Section</h2>
+	<p>This is where you can put an introduction or welcome message.</p>
 </div>
 
 <div class="content" id="about">
-    <h2>About Us</h2>
-    <p>Information about your website or business goes here.</p>
+	<h2>About Us</h2>
+	<p>Information about your website or business goes here.</p>
 </div>
 
 <div class="content" id="blog">
-    <h2>Blog</h2>
-    <p>Blog posts or news updates can be displayed here.</p>
+	<h2>Blog</h2>
+	<p>Blog posts or news updates can be displayed here.</p>
 </div>
 
 <div class="content" id="contact">
-    <h2>Contact Information</h2>
-    <p>Placeholder.</p>
+	<h2>Contact Information</h2>
+	<p>Placeholder.</p>
 </div>
 
 <div class="content" id="other">
-    <h2>ASCII Table</h2>
-    <h3>Control</h3>
-    <table id="ascii-control">
-        <thead>
-            <tr>
-                <th>Dec</th>
-                <th>Hex</th>
-                <th>Oct</th>
-                <th>Binary</th>
-                <th>Char</th>
-                <th>Ctrl</th>
-                <th>Esc</th>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>0</td><td>00</td><td>000</td><td>000 0000</td><td>NULL</td><td>^@</td><td>\0</td><td>Null</td></tr>
-            <tr><td>1</td><td>01</td><td>001</td><td>000 0001</td><td>SOH</td><td>^A</td><td></td><td>Start of heading</td></tr>
-            <tr><td>2</td><td>02</td><td>002</td><td>000 0010</td><td>STX</td><td>^B</td><td></td><td>Start of text</td></tr>
-            <tr><td>3</td><td>03</td><td>003</td><td>000 0011</td><td>ETX</td><td>^C</td><td></td><td>End of text</td></tr>
-            <tr><td>4</td><td>04</td><td>004</td><td>000 0100</td><td>EOT</td><td>^D</td><td></td><td>End of transmission</td></tr>
-            <tr><td>5</td><td>05</td><td>005</td><td>000 0101</td><td>ENQ</td><td>^E</td><td></td><td>Enquiry</td></tr>
-            <tr><td>6</td><td>06</td><td>006</td><td>000 0110</td><td>ACK</td><td>^F</td><td></td><td>Acknowledgement</td></tr>
-            <tr><td>7</td><td>07</td><td>007</td><td>000 0111</td><td>BEL</td><td>^G</td><td>\a</td><td>Bell</td></tr>
-            <tr><td>8</td><td>08</td><td>010</td><td>000 1000</td><td>BS</td><td>^H</td><td>\b</td><td>Backspace</td></tr>
-            <tr><td>9</td><td>09</td><td>011</td><td>000 1001</td><td>TAB</td><td>^I</td><td>\t</td><td>Horizontal tab</td></tr>
-            <tr><td>10</td><td>0A</td><td>012</td><td>000 1010</td><td>LF</td><td>^J</td><td>\n</td><td>Line feed</td></tr>
-            <tr><td>11</td><td>0B</td><td>013</td><td>000 1011</td><td>VT</td><td>^K</td><td>\v</td><td>Vertical tab</td></tr>
-            <tr><td>12</td><td>0C</td><td>014</td><td>000 1100</td><td>FF</td><td>^L</td><td>\f</td><td>Form feed</td></tr>
-            <tr><td>13</td><td>0D</td><td>015</td><td>000 1101</td><td>CR</td><td>^M</td><td>\r</td><td>Carriage return</td></tr>
-            <tr><td>14</td><td>0E</td><td>016</td><td>000 1110</td><td>SO</td><td>^N</td><td></td><td>Shift out</td></tr>
-            <tr><td>15</td><td>0F</td><td>017</td><td>000 1111</td><td>SI</td><td>^O</td><td></td><td>Shift in</td></tr>
-            <tr><td>16</td><td>10</td><td>020</td><td>001 0000</td><td>DLE</td><td>^P</td><td></td><td>Data link escape</td></tr>
-            <tr><td>17</td><td>11</td><td>021</td><td>001 0001</td><td>DC1</td><td>^Q</td><td></td><td>Device control 1 (XON)</td></tr>
-            <tr><td>18</td><td>12</td><td>022</td><td>001 0010</td><td>DC2</td><td>^R</td><td></td><td>Device control 2</td></tr>
-            <tr><td>19</td><td>13</td><td>023</td><td>001 0011</td><td>DC3</td><td>^S</td><td></td><td>Device control 3 (XOFF)</td></tr>
-            <tr><td>20</td><td>14</td><td>024</td><td>001 0100</td><td>DC4</td><td>^T</td><td></td><td>Device control 4</td></tr>
-            <tr><td>21</td><td>15</td><td>025</td><td>001 0101</td><td>NAK</td><td>^U</td><td></td><td>Negative acknowledgement</td></tr>
-            <tr><td>22</td><td>16</td><td>026</td><td>001 0110</td><td>SYN</td><td>^V</td><td></td><td>Synchronous idle</td></tr>
-            <tr><td>23</td><td>17</td><td>027</td><td>001 0111</td><td>ETB</td><td>^W</td><td></td><td>End of transmission block</td></tr>
-            <tr><td>24</td><td>18</td><td>030</td><td>001 1000</td><td>CAN</td><td>^X</td><td></td><td>Cancel</td></tr>
-            <tr><td>25</td><td>19</td><td>031</td><td>001 1001</td><td>EM</td><td>^Y</td><td></td><td>End of medium</td></tr>
-            <tr><td>26</td><td>1A</td><td>032</td><td>001 1010</td><td>SUB</td><td>^Z</td><td></td><td>Substitute</td></tr>
-            <tr><td>27</td><td>1B</td><td>033</td><td>001 1011</td><td>ESC</td><td>^[</td><td>\e</td><td>Escape</td></tr>
-            <tr><td>28</td><td>1C</td><td>034</td><td>001 1100</td><td>FS</td><td>^\</td><td></td><td>File separator</td></tr>
-            <tr><td>29</td><td>1D</td><td>035</td><td>001 1101</td><td>GS</td><td>^]</td><td></td><td>Group separator</td></tr>
-            <tr><td>30</td><td>1E</td><td>036</td><td>001 1110</td><td>RS</td><td>^^</td><td></td><td>Record Separator</td></tr>
-            <tr><td>31</td><td>1F</td><td>037</td><td>001 1111</td><td>US</td><td>^_</td><td></td><td>Unit separator</td></tr>
-            <tr><td>127</td><td>7F</td><td>177</td><td>111 1111</td><td>DEL</td><td>^?</td><td></td><td>Delete</td></tr>
-        </tbody>
-    </table>
+	<h2>ASCII Table</h2>
+	<h3>Control</h3>
+	<table id="ascii-control">
+		<thead>
+			<tr>
+				<th>Dec</th>
+				<th>Hex</th>
+				<th>Oct</th>
+				<th>Binary</th>
+				<th>Ctrl</th>
+				<th>Esc</th>
+				<th>Name</th>
+				<th>Char</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>0</td><td>00</td><td>000</td><td>000 0000</td><td>^@</td><td>\0</td><td>Null</td><td>NULL</td></tr>
+			<tr><td>1</td><td>01</td><td>001</td><td>000 0001</td><td>^A</td><td></td><td>Start of heading</td><td>SOH</td></tr>
+			<tr><td>2</td><td>02</td><td>002</td><td>000 0010</td><td>^B</td><td></td><td>Start of text</td><td>STX</td></tr>
+			<tr><td>3</td><td>03</td><td>003</td><td>000 0011</td><td>^C</td><td></td><td>End of text</td><td>ETX</td></tr>
+			<tr><td>4</td><td>04</td><td>004</td><td>000 0100</td><td>^D</td><td></td><td>End of transmission</td><td>EOT</td></tr>
+			<tr><td>5</td><td>05</td><td>005</td><td>000 0101</td><td>^E</td><td></td><td>Enquiry</td><td>ENQ</td></tr>
+			<tr><td>6</td><td>06</td><td>006</td><td>000 0110</td><td>^F</td><td></td><td>Acknowledgement</td><td>ACK</td></tr>
+			<tr><td>7</td><td>07</td><td>007</td><td>000 0111</td><td>^G</td><td>\a</td><td>Bell</td><td>BEL</td></tr>
+			<tr><td>8</td><td>08</td><td>010</td><td>000 1000</td><td>^H</td><td>\b</td><td>Backspace</td><td>BS</td></tr>
+			<tr><td>9</td><td>09</td><td>011</td><td>000 1001</td><td>^I</td><td>\t</td><td>Horizontal tab</td><td>TAB</td></tr>
+			<tr><td>10</td><td>0A</td><td>012</td><td>000 1010</td><td>^J</td><td>\n</td><td>Line feed</td><td>LF</td></tr>
+			<tr><td>11</td><td>0B</td><td>013</td><td>000 1011</td><td>^K</td><td>\v</td><td>Vertical tab</td><td>VT</td></tr>
+			<tr><td>12</td><td>0C</td><td>014</td><td>000 1100</td><td>^L</td><td>\f</td><td>Form feed</td><td>FF</td></tr>
+			<tr><td>13</td><td>0D</td><td>015</td><td>000 1101</td><td>^M</td><td>\r</td><td>Carriage return</td><td>CR</td></tr>
+			<tr><td>14</td><td>0E</td><td>016</td><td>000 1110</td><td>^N</td><td></td><td>Shift out</td><td>SO</td></tr>
+			<tr><td>15</td><td>0F</td><td>017</td><td>000 1111</td><td>^O</td><td></td><td>Shift in</td><td>SI</td></tr>
+			<tr><td>16</td><td>10</td><td>020</td><td>001 0000</td><td>^P</td><td></td><td>Data link escape</td><td>DLE</td></tr>
+			<tr><td>17</td><td>11</td><td>021</td><td>001 0001</td><td>^Q</td><td></td><td>Device control 1 (XON)</td><td>DC1</td></tr>
+			<tr><td>18</td><td>12</td><td>022</td><td>001 0010</td><td>^R</td><td></td><td>Device control 2</td><td>DC2</td></tr>
+			<tr><td>19</td><td>13</td><td>023</td><td>001 0011</td><td>^S</td><td></td><td>Device control 3 (XOFF)</td><td>DC3</td></tr>
+			<tr><td>20</td><td>14</td><td>024</td><td>001 0100</td><td>^T</td><td></td><td>Device control 4</td><td>DC4</td></tr>
+			<tr><td>21</td><td>15</td><td>025</td><td>001 0101</td><td>^U</td><td></td><td>Negative acknowledgement</td><td>NAK</td></tr>
+			<tr><td>22</td><td>16</td><td>026</td><td>001 0110</td><td>^V</td><td></td><td>Synchronous idle</td><td>SYN</td></tr>
+			<tr><td>23</td><td>17</td><td>027</td><td>001 0111</td><td>^W</td><td></td><td>End of transmission block</td><td>ETB</td></tr>
+			<tr><td>24</td><td>18</td><td>030</td><td>001 1000</td><td>^X</td><td></td><td>Cancel</td><td>CAN</td></tr>
+			<tr><td>25</td><td>19</td><td>031</td><td>001 1001</td><td>^Y</td><td></td><td>End of medium</td><td>EM</td></tr>
+			<tr><td>26</td><td>1A</td><td>032</td><td>001 1010</td><td>^Z</td><td></td><td>Substitute</td><td>SUB</td></tr>
+			<tr><td>27</td><td>1B</td><td>033</td><td>001 1011</td><td>^[</td><td>\e</td><td>Escape</td><td>ESC</td></tr>
+			<tr><td>28</td><td>1C</td><td>034</td><td>001 1100</td><td>^\</td><td></td><td>File separator</td><td>FS</td></tr>
+			<tr><td>29</td><td>1D</td><td>035</td><td>001 1101</td><td>^]</td><td></td><td>Group separator</td><td>GS</td></tr>
+			<tr><td>30</td><td>1E</td><td>036</td><td>001 1110</td><td>^^</td><td></td><td>Record Separator</td><td>RS</td></tr>
+			<tr><td>31</td><td>1F</td><td>037</td><td>001 1111</td><td>^_</td><td></td><td>Unit separator</td><td>US</td></tr>
+			<tr><td>127</td><td>7F</td><td>177</td><td>111 1111</td><td>^?</td><td></td><td>Delete</td><td>DEL</td></tr>
+		</tbody>
+	</table>
 
-    <h3>Printable</h3>
-    <table id="ascii-printable">
-        <thead>
-            <tr>
-                <th>Dec</th><th>Hex</th><th>Oct</th><th>Bin</th><th>Char</th>
-                <th>Dec</th><th>Hex</th><th>Oct</th><th>Bin</th><th>Char</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>32</td><td>20</td><td>040</td><td>00100000</td><td>SP</td>
-                <td>79</td><td>4F</td><td>117</td><td>01001111</td><td>O</td>
-            </tr>
-            <tr>
-                <td>33</td><td>21</td><td>041</td><td>00100001</td><td>!</td>
-                <td>80</td><td>50</td><td>120</td><td>01010000</td><td>P</td>
-            </tr>
-            <tr>
-                <td>34</td><td>22</td><td>042</td><td>00100010</td><td>"</td>
-                <td>81</td><td>51</td><td>121</td><td>01010001</td><td>Q</td>
-            </tr>
-            <tr>
-                <td>35</td><td>23</td><td>043</td><td>00100011</td><td>#</td>
-                <td>82</td><td>52</td><td>122</td><td>01010010</td><td>R</td>
-            </tr>
-            <tr>
-                <td>36</td><td>24</td><td>044</td><td>00100100</td><td>$</td>
-                <td>83</td><td>53</td><td>123</td><td>01010011</td><td>S</td>
-            </tr>
-            <tr>
-                <td>37</td><td>25</td><td>045</td><td>00100101</td><td>%</td>
-                <td>84</td><td>54</td><td>124</td><td>01010100</td><td>T</td>
-            </tr>
-            <tr>
-                <td>38</td><td>26</td><td>046</td><td>00100110</td><td>&</td>
-                <td>85</td><td>55</td><td>125</td><td>01010101</td><td>U</td>
-            </tr>
-            <tr>
-                <td>39</td><td>27</td><td>047</td><td>00100111</td><td>'</td>
-                <td>86</td><td>56</td><td>126</td><td>01010110</td><td>V</td>
-            </tr>
-            <tr>
-                <td>40</td><td>28</td><td>050</td><td>00101000</td><td>(</td>
-                <td>87</td><td>57</td><td>127</td><td>01010111</td><td>W</td>
-            </tr>
-            <tr>
-                <td>41</td><td>29</td><td>051</td><td>00101001</td><td>)</td>
-                <td>88</td><td>58</td><td>130</td><td>01011000</td><td>X</td>
-            </tr>
-            <tr>
-                <td>42</td><td>2A</td><td>052</td><td>00101010</td><td>*</td>
-                <td>89</td><td>59</td><td>131</td><td>01011001</td><td>Y</td>
-            </tr>
-            <tr>
-                <td>43</td><td>2B</td><td>053</td><td>00101011</td><td>+</td>
-                <td>90</td><td>5A</td><td>132</td><td>01011010</td><td>Z</td>
-            </tr>
-            <tr>
-                <td>44</td><td>2C</td><td>054</td><td>00101100</td><td>,</td>
-                <td>91</td><td>5B</td><td>133</td><td>01011011</td><td>[</td>
-            </tr>
-            <tr>
-                <td>45</td><td>2D</td><td>055</td><td>00101101</td><td>-</td>
-                <td>92</td><td>5C</td><td>134</td><td>01011100</td><td>\</td>
-            </tr>
-            <tr>
-                <td>46</td><td>2E</td><td>056</td><td>00101110</td><td>.</td>
-                <td>93</td><td>5D</td><td>135</td><td>01011101</td><td>]</td>
-            </tr>
-            <tr>
-                <td>47</td><td>2F</td><td>057</td><td>00101111</td><td>/</td>
-                <td>94</td><td>5E</td><td>136</td><td>01011110</td><td>^</td>
-            </tr>
-            <tr>
-                <td>48</td><td>30</td><td>060</td><td>00110000</td><td>0</td>
-                <td>95</td><td>5F</td><td>137</td><td>01011111</td><td>_</td>
-            </tr>
-            <tr>
-                <td>49</td><td>31</td><td>061</td><td>00110001</td><td>1</td>
-                <td>96</td><td>60</td><td>140</td><td>01100000</td><td>`</td>
-            </tr>
-            <tr>
-                <td>50</td><td>32</td><td>062</td><td>00110010</td><td>2</td>
-                <td>97</td><td>61</td><td>141</td><td>01100001</td><td>a</td>
-            </tr>
-            <tr>
-                <td>51</td><td>33</td><td>063</td><td>00110011</td><td>3</td>
-                <td>98</td><td>62</td><td>142</td><td>01100010</td><td>b</td>
-            </tr>
-            <tr>
-                <td>52</td><td>34</td><td>064</td><td>00110100</td><td>4</td>
-                <td>99</td><td>63</td><td>143</td><td>01100011</td><td>c</td>
-            </tr>
-            <tr>
-                <td>53</td><td>35</td><td>065</td><td>00110101</td><td>5</td>
-                <td>100</td><td>64</td><td>144</td><td>01100100</td><td>d</td>
-            </tr>
-            <tr>
-                <td>54</td><td>36</td><td>066</td><td>00110110</td><td>6</td>
-                <td>101</td><td>65</td><td>145</td><td>01100101</td><td>e</td>
-            </tr>
-            <tr>
-                <td>55</td><td>37</td><td>067</td><td>00110111</td><td>7</td>
-                <td>102</td><td>66</td><td>146</td><td>01100110</td><td>f</td>
-            </tr>
-            <tr>
-                <td>56</td><td>38</td><td>070</td><td>00111000</td><td>8</td>
-                <td>103</td><td>67</td><td>147</td><td>01100111</td><td>g</td>
-            </tr>
-            <tr>
-                <td>57</td><td>39</td><td>071</td><td>00111001</td><td>9</td>
-                <td>104</td><td>68</td><td>150</td><td>01101000</td><td>h</td>
-            </tr>
-            <tr>
-                <td>58</td><td>3A</td><td>072</td><td>00111010</td><td>:</td>
-                <td>105</td><td>69</td><td>151</td><td>01101001</td><td>i</td>
-            </tr>
-            <tr>
-                <td>59</td><td>3B</td><td>073</td><td>00111011</td><td>;</td>
-                <td>106</td><td>6A</td><td>152</td><td>01101010</td><td>j</td>
-            </tr>
-            <tr>
-                <td>60</td><td>3C</td><td>074</td><td>00111100</td><td><</td>
-                <td>107</td><td>6B</td><td>153</td><td>01101011</td><td>k</td>
-            </tr>
-            <tr>
-                <td>61</td><td>3D</td><td>075</td><td>00111101</td><td>=</td>
-                <td>108</td><td>6C</td><td>154</td><td>01101100</td><td>l</td>
-            </tr>
-            <tr>
-                <td>62</td><td>3E</td><td>076</td><td>00111110</td><td>></td>
-                <td>109</td><td>6D</td><td>155</td><td>01101101</td><td>m</td>
-            </tr>
-            <tr>
-                <td>63</td><td>3F</td><td>077</td><td>00111111</td><td>?</td>
-                <td>110</td><td>6E</td><td>156</td><td>01101110</td><td>n</td>
-            </tr>
-            <tr>
-                <td>64</td><td>40</td><td>100</td><td>01000000</td><td>@</td>
-                <td>111</td><td>6F</td><td>157</td><td>01101111</td><td>o</td>
-            </tr>
-            <tr>
-                <td>65</td><td>41</td><td>101</td><td>01000001</td><td>A</td>
-                <td>112</td><td>70</td><td>160</td><td>01110000</td><td>p</td>
-            </tr>
-            <tr>
-                <td>66</td><td>42</td><td>102</td><td>01000010</td><td>B</td>
-                <td>113</td><td>71</td><td>161</td><td>01110001</td><td>q</td>
-            </tr>
-            <tr>
-                <td>67</td><td>43</td><td>103</td><td>01000011</td><td>C</td>
-                <td>114</td><td>72</td><td>162</td><td>01110010</td><td>r</td>
-            </tr>
-            <tr>
-                <td>68</td><td>44</td><td>104</td><td>01000100</td><td>D</td>
-                <td>115</td><td>73</td><td>163</td><td>01110011</td><td>s</td>
-            </tr>
-            <tr>
-                <td>69</td><td>45</td><td>105</td><td>01000101</td><td>E</td>
-                <td>116</td><td>74</td><td>164</td><td>01110100</td><td>t</td>
-            </tr>
-            <tr>
-                <td>70</td><td>46</td><td>106</td><td>01000110</td><td>F</td>
-                <td>117</td><td>75</td><td>165</td><td>01110101</td><td>u</td>
-            </tr>
-            <tr>
-                <td>71</td><td>47</td><td>107</td><td>01000111</td><td>G</td>
-                <td>118</td><td>76</td><td>166</td><td>01110110</td><td>v</td>
-            </tr>
-            <tr>
-                <td>72</td><td>48</td><td>110</td><td>01001000</td><td>H</td>
-                <td>119</td><td>77</td><td>167</td><td>01110111</td><td>w</td>
-            </tr>
-            <tr>
-                <td>73</td><td>49</td><td>111</td><td>01001001</td><td>I</td>
-                <td>120</td><td>78</td><td>170</td><td>01111000</td><td>x</td>
-            </tr>
-            <tr>
-                <td>74</td><td>4A</td><td>112</td><td>01001010</td><td>J</td>
-                <td>121</td><td>79</td><td>171</td><td>01111001</td><td>y</td>
-            </tr>
-            <tr>
-                <td>75</td><td>4B</td><td>113</td><td>01001011</td><td>K</td>
-                <td>122</td><td>7A</td><td>172</td><td>01111010</td><td>z</td>
-            </tr>
-            <tr>
-                <td>76</td><td>4C</td><td>114</td><td>01001100</td><td>L</td>
-                <td>123</td><td>7B</td><td>173</td><td>01111011</td><td>{</td>
-            </tr>
-            <tr>
-                <td>77</td><td>4D</td><td>115</td><td>01001101</td><td>M</td>
-                <td>124</td><td>7C</td><td>174</td><td>01111100</td><td>|</td>
-            </tr>
-            <tr>
-                <td>78</td><td>4E</td><td>116</td><td>01001110</td><td>N</td>
-                <td>125</td><td>7D</td><td>175</td><td>01111101</td><td>}</td>
-            </tr>
-        </tbody>
-    </table>
+	<h3>Printable</h3>
+	<table id="ascii-printable">
+		<thead>
+			<tr>
+				<th>Dec</th><th>Hex</th><th>Oct</th><th>Bin</th><th>Char</th>
+				<th>Dec</th><th>Hex</th><th>Oct</th><th>Bin</th><th>Char</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>32</td><td>20</td><td>40</td><td>00100000</td><td>SP</td><td>80</td><td>50</td><td>120</td><td>01010000</td><td>P</td></tr>
+			<tr><td>33</td><td>21</td><td>41</td><td>00100001</td><td>!</td><td>81</td><td>51</td><td>121</td><td>01010001</td><td>Q</td></tr>
+			<tr><td>34</td><td>22</td><td>42</td><td>00100010</td><td>"</td><td>82</td><td>52</td><td>122</td><td>01010010</td><td>R</td></tr>
+			<tr><td>35</td><td>23</td><td>43</td><td>00100011</td><td>#</td><td>83</td><td>53</td><td>123</td><td>01010011</td><td>S</td></tr>
+			<tr><td>36</td><td>24</td><td>44</td><td>00100100</td><td>$</td><td>84</td><td>54</td><td>124</td><td>01010100</td><td>T</td></tr>
+			<tr><td>37</td><td>25</td><td>45</td><td>00100101</td><td>%</td><td>85</td><td>55</td><td>125</td><td>01010101</td><td>U</td></tr>
+			<tr><td>38</td><td>26</td><td>46</td><td>00100110</td><td>&amp;</td><td>86</td><td>56</td><td>126</td><td>01010110</td><td>V</td></tr>
+			<tr><td>39</td><td>27</td><td>47</td><td>00100111</td><td>'</td><td>87</td><td>57</td><td>127</td><td>01010111</td><td>W</td></tr>
+			<tr><td>40</td><td>28</td><td>50</td><td>00101000</td><td>(</td><td>88</td><td>58</td><td>130</td><td>01011000</td><td>X</td></tr>
+			<tr><td>41</td><td>29</td><td>51</td><td>00101001</td><td>)</td><td>89</td><td>59</td><td>131</td><td>01011001</td><td>Y</td></tr>
+			<tr><td>42</td><td>2A</td><td>52</td><td>00101010</td><td>*</td><td>90</td><td>5A</td><td>132</td><td>01011010</td><td>Z</td></tr>
+			<tr><td>43</td><td>2B</td><td>53</td><td>00101011</td><td>+</td><td>91</td><td>5B</td><td>133</td><td>01011011</td><td>[</td></tr>
+			<tr><td>44</td><td>2C</td><td>54</td><td>00101100</td><td>,</td><td>92</td><td>5C</td><td>134</td><td>01011100</td><td>\</td></tr>
+			<tr><td>45</td><td>2D</td><td>55</td><td>00101101</td><td>-</td><td>93</td><td>5D</td><td>135</td><td>01011101</td><td>]</td></tr>
+			<tr><td>46</td><td>2E</td><td>56</td><td>00101110</td><td>.</td><td>94</td><td>5E</td><td>136</td><td>01011110</td><td>^</td></tr>
+			<tr><td>47</td><td>2F</td><td>57</td><td>00101111</td><td>/</td><td>95</td><td>5F</td><td>137</td><td>01011111</td><td>_</td></tr>
+			<tr><td>48</td><td>30</td><td>60</td><td>00110000</td><td>0</td><td>96</td><td>60</td><td>140</td><td>01100000</td><td>`</td></tr>
+			<tr><td>49</td><td>31</td><td>61</td><td>00110001</td><td>1</td><td>97</td><td>61</td><td>141</td><td>01100001</td><td>a</td></tr>
+			<tr><td>50</td><td>32</td><td>62</td><td>00110010</td><td>2</td><td>98</td><td>62</td><td>142</td><td>01100010</td><td>b</td></tr>
+			<tr><td>51</td><td>33</td><td>63</td><td>00110011</td><td>3</td><td>99</td><td>63</td><td>143</td><td>01100011</td><td>c</td></tr>
+			<tr><td>52</td><td>34</td><td>64</td><td>00110100</td><td>4</td><td>100</td><td>64</td><td>144</td><td>01100100</td><td>d</td></tr>
+			<tr><td>53</td><td>35</td><td>65</td><td>00110101</td><td>5</td><td>101</td><td>65</td><td>145</td><td>01100101</td><td>e</td></tr>
+			<tr><td>54</td><td>36</td><td>66</td><td>00110110</td><td>6</td><td>102</td><td>66</td><td>146</td><td>01100110</td><td>f</td></tr>
+			<tr><td>55</td><td>37</td><td>67</td><td>00110111</td><td>7</td><td>103</td><td>67</td><td>147</td><td>01100111</td><td>g</td></tr>
+			<tr><td>56</td><td>38</td><td>70</td><td>00111000</td><td>8</td><td>104</td><td>68</td><td>150</td><td>01101000</td><td>h</td></tr>
+			<tr><td>57</td><td>39</td><td>71</td><td>00111001</td><td>9</td><td>105</td><td>69</td><td>151</td><td>01101001</td><td>i</td></tr>
+			<tr><td>58</td><td>3A</td><td>72</td><td>00111010</td><td>:</td><td>106</td><td>6A</td><td>152</td><td>01101010</td><td>j</td></tr>
+			<tr><td>59</td><td>3B</td><td>73</td><td>00111011</td><td>;</td><td>107</td><td>6B</td><td>153</td><td>01101011</td><td>k</td></tr>
+			<tr><td>60</td><td>3C</td><td>74</td><td>00111100</td><td>&lt;</td><td>108</td><td>6C</td><td>154</td><td>01101100</td><td>l</td></tr>
+			<tr><td>61</td><td>3D</td><td>75</td><td>00111101</td><td>=</td><td>109</td><td>6D</td><td>155</td><td>01101101</td><td>m</td></tr>
+			<tr><td>62</td><td>3E</td><td>76</td><td>00111110</td><td>&gt;</td><td>110</td><td>6E</td><td>156</td><td>01101110</td><td>n</td></tr>
+			<tr><td>63</td><td>3F</td><td>77</td><td>00111111</td><td>?</td><td>111</td><td>6F</td><td>157</td><td>01101111</td><td>o</td></tr>
+			<tr><td>64</td><td>40</td><td>100</td><td>01000000</td><td>@</td><td>112</td><td>70</td><td>160</td><td>01110000</td><td>p</td></tr>
+			<tr><td>65</td><td>41</td><td>101</td><td>01000001</td><td>A</td><td>113</td><td>71</td><td>161</td><td>01110001</td><td>q</td></tr>
+			<tr><td>66</td><td>42</td><td>102</td><td>01000010</td><td>B</td><td>114</td><td>72</td><td>162</td><td>01110010</td><td>r</td></tr>
+			<tr><td>67</td><td>43</td><td>103</td><td>01000011</td><td>C</td><td>115</td><td>73</td><td>163</td><td>01110011</td><td>s</td></tr>
+			<tr><td>68</td><td>44</td><td>104</td><td>01000100</td><td>D</td><td>116</td><td>74</td><td>164</td><td>01110100</td><td>t</td></tr>
+			<tr><td>69</td><td>45</td><td>105</td><td>01000101</td><td>E</td><td>117</td><td>75</td><td>165</td><td>01110101</td><td>u</td></tr>
+			<tr><td>70</td><td>46</td><td>106</td><td>01000110</td><td>F</td><td>118</td><td>76</td><td>166</td><td>01110110</td><td>v</td></tr>
+			<tr><td>71</td><td>47</td><td>107</td><td>01000111</td><td>G</td><td>119</td><td>77</td><td>167</td><td>01110111</td><td>w</td></tr>
+			<tr><td>72</td><td>48</td><td>110</td><td>01001000</td><td>H</td><td>120</td><td>78</td><td>170</td><td>01111000</td><td>x</td></tr>
+			<tr><td>73</td><td>49</td><td>111</td><td>01001001</td><td>I</td><td>121</td><td>79</td><td>171</td><td>01111001</td><td>y</td></tr>
+			<tr><td>74</td><td>4A</td><td>112</td><td>01001010</td><td>J</td><td>122</td><td>7A</td><td>172</td><td>01111010</td><td>z</td></tr>
+			<tr><td>75</td><td>4B</td><td>113</td><td>01001011</td><td>K</td><td>123</td><td>7B</td><td>173</td><td>01111011</td><td>{</td></tr>
+			<tr><td>76</td><td>4C</td><td>114</td><td>01001100</td><td>L</td><td>124</td><td>7C</td><td>174</td><td>01111100</td><td>|</td></tr>
+			<tr><td>77</td><td>4D</td><td>115</td><td>01001101</td><td>M</td><td>125</td><td>7D</td><td>175</td><td>01111101</td><td>}</td></tr>
+			<tr><td>78</td><td>4E</td><td>116</td><td>01001110</td><td>N</td><td>126</td><td>7E</td><td>176</td><td>01111110</td><td>~</td></tr>
+			<tr><td>79</td><td>4F</td><td>117</td><td>01001111</td><td>O</td><td></td><td></td><td></td><td></td><td></td></tr>
+		</tbody>
+	</table>
+</div>
 </div>
 
-<script>
-    const navLinks = document.querySelectorAll('nav ul li a');
-    const contentSections = document.querySelectorAll('.content');
+<footer>
+	<div class="footer-container">
+		<p>&copy; 2024 backdaniel. All rights reserved.</p>
+		<div class="footer-links">
+			<a href="https://github.com/backdaniel" target="_blank">GitHub</a>
+			<a href="https://discord.com/" target="_blank">Discord</a>
+			<a href="mailto:mail@backdaniel.com">Email</a>
+		</div>
+	</div>
+</footer>
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
+<script src="script.js"></script> 
 
-            navLinks.forEach(nav => nav.classList.remove('active'));
-            contentSections.forEach(section => section.classList.remove('active'));
-
-            link.classList.add('active');
-
-            const targetId = link.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-                targetSection.classList.add('active');
-            }
-        });
-    });
-</script>
-    
 </body>
 </html>
